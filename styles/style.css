@@ -1,0 +1,89 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+    font-size: 62.5;
+  }
+  
+  .activity-box, .activity-box-top, .box-id-container, .date-container, .name-container, .duration-container{
+    /* my display flex zone */
+    display: flex;
+    
+  }
+  
+  .box-id-container, .date-container, .name-container, .duration-container{
+    /* my display: flex, column, centered; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+  }
+  
+  
+  .activity-box{
+    border: 2px solid black;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  header {
+  
+  }
+  
+  footer {
+  
+  }
+  
+  .activity-container{
+    height: 100vh;
+    width: 100%;
+  }
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  .activity-box{
+    height: 50%;
+    width: 50%;
+    flex-direction: column;
+  }
+  
+  .activity-box-items{
+    flex-grow: 1;
+  }
+  
+  
+  .box-id-container{
+    width: 50%;
+    
+  }
+  
+  .box-id-input{
+    width: 50%;
+  }
+  
+  .hidden{
+    display: none;
+  }
+  
+  .date-container{
+    width:50%
+  }
+  .date-input{
+    width: 50%;
+  }
+  
+  #name{
+    width: 50%;
+  }
+  
+  .box-id-grow{
+    font-size: 5em;
+  }
